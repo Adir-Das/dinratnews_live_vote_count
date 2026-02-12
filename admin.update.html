@@ -121,7 +121,19 @@ function saveData(){
   localStorage.setItem('liveVotes', JSON.stringify(data));
   alert('ভোট আপডেট হয়েছে! লাইভ স্ক্রিন রিফ্রেশ করুন');
 }
+
+const saved = localStorage.getItem("liveVotes");
+if(saved){
+  data = JSON.parse(saved);
+}
+
+
+
+
+
 </script>
+
+
 
 </body>
 </html>
